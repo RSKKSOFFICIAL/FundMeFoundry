@@ -12,7 +12,7 @@ Ensure you have the following installed on your system:
 ## **⚙️ Setup & Installation**
 ### **1️⃣ Install Dependencies**
 Run the following command to install required dependencies:
-```sh
+
 make install
 
 ### **2️⃣ Update Dependencies**
@@ -20,8 +20,6 @@ To update installed libraries:
 ```sh
 make update
 ```
-
----
 
 ## **🚀 Development Workflow**
 ### **🛠 Build & Compile**
@@ -112,4 +110,4 @@ make help
 ```
 
 This project simplifies smart contract development using Foundry, enabling Ethereum and zkSync deployment. Happy coding! 🚀
-```
+
