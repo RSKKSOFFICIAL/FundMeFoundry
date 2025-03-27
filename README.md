@@ -12,9 +12,9 @@ Ensure you have the following installed on your system:
 ## **⚙️ Setup & Installation**
 ### **1️⃣ Install Dependencies**
 Run the following command to install required dependencies:
-
+```sh
 make install
-
+```
 ### **2️⃣ Update Dependencies**
 To update installed libraries:
 ```sh
