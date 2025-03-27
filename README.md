@@ -1,5 +1,3 @@
-
-```md
 # FundMe Foundry Project
 
 This project uses **Foundry** to develop and deploy smart contracts, including support for **zkSync** and **Ethereum testnets**. The `Makefile` provides a set of commands to streamline development, testing, and deployment.
@@ -16,7 +14,6 @@ Ensure you have the following installed on your system:
 Run the following command to install required dependencies:
 ```sh
 make install
-```
 
 ### **2️⃣ Update Dependencies**
 To update installed libraries:
