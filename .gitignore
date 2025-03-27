@@ -9,7 +9,9 @@ out/
 
 # Docs
 docs/
-/dv
+
+# Ignore all files named 'dv' in any directory
+**/dv
 
 
 # Dotenv file
