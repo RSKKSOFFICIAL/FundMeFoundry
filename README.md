@@ -1,66 +1,118 @@
-## Foundry
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+```md
+# FundMe Foundry Project
 
-Foundry consists of:
+This project uses **Foundry** to develop and deploy smart contracts, including support for **zkSync** and **Ethereum testnets**. The `Makefile` provides a set of commands to streamline development, testing, and deployment.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## **📌 Prerequisites**
+Ensure you have the following installed on your system:
+- [Foundry](https://getfoundry.sh/)
+- [Node.js & NPM](https://nodejs.org/)
+- [zkSync CLI](https://era.zksync.io/docs/tools/zksync-cli/)
+- [Anvil](https://book.getfoundry.sh/anvil/)
 
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
+## **⚙️ Setup & Installation**
+### **1️⃣ Install Dependencies**
+Run the following command to install required dependencies:
+```sh
+make install
 ```
 
-### Test
-
-```shell
-$ forge test
+### **2️⃣ Update Dependencies**
+To update installed libraries:
+```sh
+make update
 ```
 
-### Format
+---
 
-```shell
-$ forge fmt
+## **🚀 Development Workflow**
+### **🛠 Build & Compile**
+To compile the contracts:
+```sh
+make build
+```
+For **zkSync** specific builds:
+```sh
+make zkbuild
 ```
 
-### Gas Snapshots
-
-```shell
-$ forge snapshot
+### **🧪 Run Tests**
+To execute all tests:
+```sh
+make test
+```
+For zkSync tests:
+```sh
+make zktest
 ```
 
-### Anvil
-
-```shell
-$ anvil
+### **📸 Snapshot**
+To generate a snapshot of test results:
+```sh
+make snapshot
 ```
 
-### Deploy
-
-```shell
-$ forge script script/DeployFundMe.s.sol:DeployFundMe --rpc-url <your_rpc_url> --private-key <your_private_key>
+### **🧹 Clean the Project**
+Removes compiled artifacts:
+```sh
+make clean
 ```
 
-### Cast
-
-```shell
-$ cast <subcommand>
+### **📜 Format Code**
+To format Solidity contracts:
+```sh
+make format
 ```
 
-### Help
+---
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
+## **🚀 Deployment**
+### **📡 Local Deployment (Anvil)**
+To start a local **Anvil** node:
+```sh
+make anvil
+```
+For zkSync local node:
+```sh
+make zk-anvil
+```
+
+### **🌍 Deploy to Ethereum (Sepolia)**
+To deploy on **Sepolia testnet**:
+```sh
+make deploy-sepolia
+```
+
+### **🔗 Deploy to zkSync**
+To deploy on zkSync:
+```sh
+make deploy-zk
+```
+For zkSync **Sepolia**:
+```sh
+make deploy-zk-sepolia
+```
+
+---
+
+## **💰 Funding & Withdrawals**
+### **🔹 Fund Contract**
+```sh
+make fund
+```
+### **🔸 Withdraw Funds**
+```sh
+make withdraw
+```
+
+---
+
+## **📖 Help**
+To list all available commands:
+```sh
+make help
+```
+
+This project simplifies smart contract development using Foundry, enabling Ethereum and zkSync deployment. Happy coding! 🚀
 ```
